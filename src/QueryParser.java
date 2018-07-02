@@ -43,11 +43,11 @@ public class QueryParser {
         Statement statement = null;
         ResultSet resultSet = null;
         String query = " ";
-        System.out.println("Enter the connection name associated with your JDBC MySQL connection:");
+        System.out.println("Enter the connection name associated with your MySQL JDBC connection:");
         String name = scanner.next();
-        System.out.println("Enter the username associated with your JDBC MySQL connection:");
+        System.out.println("Enter the username associated with your MySQL JDBC connection:");
         String username = scanner.next();
-        System.out.println("Enter the password associated with your JDBC MySQL connection:");
+        System.out.println("Enter the password associated with your MySQL JDBC connection:");
         String password = scanner.next();
         try {
             //Ask for username and PW to DB and add it to getConnection
@@ -58,7 +58,7 @@ public class QueryParser {
             statement = connection.createStatement();
             System.out.println(" ");
             while (!query.equals("exit")) {
-                System.out.println(Colors.BOLD + "Please enter your query (refer to the card_table.sql file for schema): " + Colors.ANSI_RESET);
+                System.out.println(Colors.BOLD + "Please enter your query or 'exit' to quit the tool (refer to the card_table.sql file for schema): " + Colors.ANSI_RESET);
                 System.out.println(" ");
                 query = line.nextLine();
                 if (query.equals("exit")) {
@@ -73,7 +73,7 @@ public class QueryParser {
                         }
                     }
                 } else {
-                    System.out.println("Invalid query.");
+                    System.out.println("Invalid query. Please enter a valid query.");
                 }
             }
         } catch (SQLException ex) {
