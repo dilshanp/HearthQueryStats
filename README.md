@@ -6,6 +6,8 @@ based on their various features.
 I developed this project using IntelliJ IDEA CE and through the MAC OS X command line.
 The JSON data file containing the Hearthstone cards and their information was provided by 
 [HearthstoneJSON](https://hearthstonejson.com/) (A Hearthstone API that uses JSON instead of raw files for card data).
+The card_table SQL file was generated from the JSON file with a program called [SQLizer](https://sqlizer.io/#/). For
+more on the conversion process, visit this [link](https://sqlizer.io/help/conversion/).
 ## Setup
 **Prerequisites**: [Git](https://git-scm.com/), [MySQL](https://www.mysql.com/), (Optional: [MySQL WorkBench](https://www.mysql.com/products/workbench/)), [JDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [JSONSimple](https://code.google.com/archive/p/json-simple/downloads), [MySQL Java Connector](https://dev.mysql.com/downloads/connector/j/)
 
