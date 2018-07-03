@@ -13,7 +13,7 @@ The JSON data file containing the Hearthstone cards and their information was pr
 2. Navigate to the src folder. Open MySQL Workbench and add a new connection with the following:
 * Enter a connection name and make sure the 'Connection' tab is selected.
 * Select 'Standard (TCP/IP)' as the method to connect to the RDBMS.
-* Under Parameters, make sure Hostname is localhost (127.0.0.1) and the port # is 3306. Then set the username and a password
+* Under Parameters, make sure Hostname is localhost (127.0.0.1) and the port # (default 3306). Then set the username and a password
 3. Setup a MySQL server (On Mac go to System Preferences -> MySQL -> Initialize Database)
 4. Enter a password for user 'root' and select 'Use Legacy Password Encryption'
 5. Click 'Start MySQL Server'. Then go ahead and import the card_table.sql file
