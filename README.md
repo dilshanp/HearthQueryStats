@@ -17,7 +17,7 @@ The JSON data file containing the Hearthstone cards and their information was pr
 3. Setup a MySQL server (On Mac go to System Preferences -> MySQL -> Initialize Database)
 4. Enter a password for user 'root' and select 'Use Legacy Password Encryption'
 5. Click 'Start MySQL Server'. Then go ahead and import the card_table.sql file
-* Note: At the top of .sql file, the database is called 'test', but feel free to change the name if you feel the need to, but keep the same name in 'use test' line by replacing 'test' with your preferred name.
+* Note: At the top of .sql file, the database is called 'test', but feel free to change the name if you feel the need to. However, keep the same name in 'use test' line by replacing 'test' with your preferred name.
 6. Save and execute the .sql script. Now the database is setup and it is time to enter the Query Parser.
 
 **Execution of Parser:**
@@ -36,3 +36,9 @@ in the card_table.sql file. Review the file for the entire schema.
 4. Now you can choose from a list of commands to display some aggregated statistics 
 and features of cards.
 
+## Improvements
+One thing I look to improve on is adding more features to the CardStats program as well as adding the ability
+to support more types of queries. Currently, the user needs to select by 'list_id' because the id of the card is
+mapped to all of its attributes. The positive is it allows the user to focus on the conditions and grouping of 
+what cards are returned and the cards are then displayed cleanly on the command line. The next step is being able
+to return the rendering of the card with all possible combinations of columns.
