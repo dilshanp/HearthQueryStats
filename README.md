@@ -9,7 +9,7 @@ The JSON data file containing the Hearthstone cards and their information was pr
 The card_table SQL file was generated from the JSON file with a program called [SQLizer](https://sqlizer.io/#/). For
 more on the conversion process, visit this [link](https://sqlizer.io/help/conversion/).
 ## Setup
-**Prerequisites**: [Git](https://git-scm.com/), [MySQL WorkBench](https://www.mysql.com/products/workbench/), [MySQL](https://www.mysql.com/) (if done through command line), [JDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [JSONSimple](https://code.google.com/archive/p/json-simple/downloads), [MySQL Java Connector](https://dev.mysql.com/downloads/connector/j/)
+**Prerequisites**: [Git](https://git-scm.com/), [MySQL WorkBench](https://www.mysql.com/products/workbench/), [MySQL](https://www.mysql.com/)(command line), [JDK 1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [JSONSimple](https://code.google.com/archive/p/json-simple/downloads), [MySQL Java Connector](https://dev.mysql.com/downloads/connector/j/)
 
 1. Clone the repo with `git clone https://github.com/dilshanp/HearthQueryStats.git`
 2. Navigate to the src folder. Open MySQL Workbench and add a new connection with the following:
