@@ -24,9 +24,9 @@ more on the conversion process, visit this [link](https://sqlizer.io/help/conver
 
 **Execution of Parser:**
 1. In terminal,  run `cd src`
-2. Then run `javac -cp pathToJSONSimpleJarFile;pathToMySQLConnectorJavaJarFile QueryParser.java`
+2. Then run `javac -cp pathToJSONSimpleJarFile;pathToMySQLConnectorJavaJarFile: QueryParser.java`
 * Note: Both path variables are the absolute path to the JSON Simple jar file and the JDBC jar file you downloaded.
-3. Run `java -cp pathToJSONSimpleJarFile;pathToMySQLConnectorJavaJarFile QueryParser`
+3. Run `java -cp pathToJSONSimpleJarFile;pathToMySQLConnectorJavaJarFile: QueryParser`
 4. You will be prompted to enter connection name, username, and password for the DB.
 5. Now you can enter queries involving 'list_id' (as of now) to get back cards back based off conditions of other columns
 in the card_table.sql file. Review the file for the entire schema.
