@@ -12,18 +12,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CardStats.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CardStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CardStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="250" column="94" selection-start-line="250" selection-start-column="94" selection-end-line="250" selection-end-column="94" />
+            <state relative-caret-position="887">
+              <caret line="292" column="41" selection-start-line="292" selection-start-column="41" selection-end-line="292" selection-end-column="41" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HearthQueryStats.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HearthQueryStats.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -51,6 +46,11 @@
               <item name="HearthQueryStats" type="b2602c69:ProjectViewProjectNode" />
               <item name="HearthQueryStats" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HearthQueryStats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HearthQueryStats" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -75,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QueryParser">
+  <component name="RunManager" selected="Application.">
     <configuration name="" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="CardStats" />
       <module name="HearthQueryStats" />
@@ -152,6 +152,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="678" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -192,15 +193,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardStats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="250" column="94" selection-start-line="250" selection-start-column="94" selection-end-line="250" selection-end-column="94" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/HearthstoneData.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HearthQueryStats.iml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="292" column="41" selection-start-line="292" selection-start-column="41" selection-end-line="292" selection-end-column="41" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
