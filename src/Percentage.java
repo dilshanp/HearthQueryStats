@@ -103,11 +103,18 @@ public class Percentage {
             JSONObject card = (JSONObject) o;
             if (card.containsKey("text")) {
                 String text = (String) card.get("text");
+                if (text.toLowerCase().contains("magnetic")) {
+                    if (wordMap.containsKey("Magnetic")) {
+                        wordMap.put("Magnetic", wordMap.get("Magnetic") + 1);
+                    } else {
+                        wordMap.put("Magnetic", 1);
+                    }
+                }
                 if (card.containsKey("referencedTags")) {
                     List<String> tags = (List<String>) card.get("referencedTags");
                     for (String s : tags) {
                         String lower = s.toLowerCase();
-                        boolean hasKeyWord = text.toLowerCase().contains(s.toLowerCase());
+                        boolean hasKeyWord = text.toLowerCase().contains(lower);
                         if (hasKeyWord) {
                             if (wordMap.containsKey(lower)) {
                                 wordMap.put(lower, wordMap.get(lower) + 1);
@@ -137,7 +144,7 @@ public class Percentage {
 
     public void displayKeyWords() {
         int mapValueCount = countValues(wordMap);
-        System.out.println(Colors.BOLD + "Here are 22 Keywords and their corresponding percentages:" + Colors.ANSI_RESET);
+        System.out.println(Colors.BOLD + "Here are 23 Keywords and their corresponding percentages:" + Colors.ANSI_RESET);
         System.out.println(" ");
         for (Map.Entry<String, Integer> pair : wordMap.entrySet()) {
             String keyWord = pair.getKey();

@@ -194,7 +194,8 @@ public class CardStats {
             if (result.size() == 1) {
                 String nameOfArtist = result.iterator().next();
                 nameList = nameList.concat(position + ". " + nameOfArtist + " has illustrated " + nums.get(i) + " cards.");
-                System.out.println(nameList + " E.g. " + artistMap.get(nameOfArtist).subList(0, 3));
+                System.out.println(nameList + " E.g. " + Colors.ANSI_BLACK_BACKGROUND +
+                        Colors.ANSI_GREEN + artistMap.get(nameOfArtist).subList(0, 3) + Colors.ANSI_RESET);
                 position++;
             } else {
                 nameList = position + ". ";
@@ -204,7 +205,8 @@ public class CardStats {
                         nameList = nameList.concat(ser + ", ");
                     }
                     nameList = nameList.concat("have illustrated " + nums.get(i) + " cards.");
-                    System.out.println(nameList + " E.g. " + artistMap.get(nameOfArtist).subList(0, 3));
+                    System.out.println(nameList + " E.g. " + Colors.ANSI_BLACK_BACKGROUND +
+                            Colors.ANSI_GREEN + artistMap.get(nameOfArtist).subList(0, 3) + Colors.ANSI_RESET);
                     position++;
                 }
             }
